@@ -3,7 +3,10 @@
 #include <iomanip>
 class Driver
 {
-public:
+private:
+	static void printClocks(Clock militaryClock, MeridianClock standardClock);
 	static void printMenu();
+	
+public:
 	static void run();
 };
