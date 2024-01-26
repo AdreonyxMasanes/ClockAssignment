@@ -2,6 +2,7 @@
 
 int main()
 {
+	// Run the assignment.
 	Driver::run();
 	return 0;
 }

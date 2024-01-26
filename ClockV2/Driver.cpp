@@ -62,9 +62,19 @@ void Driver::printClocks(Clock militaryClock, MeridianClock standardClock)
 
 // TODO: GET USERINPUT
 void Driver::run()
-{
-	Clock militaryClock(23, 55, 55);
-	MeridianClock normalClock(23, 55, 55);
+{ 
+	// User input
+	int userHour = 0;
+	int userMinute = 0;
+	int userSecond = 0;
+	std::cout << "Enter a start time in military standard formated like so: HH MM SS. EX. 23:22:02" << std::endl;
+	std::cin >> userHour >> userMinute >> userSecond;
+
+	// Create clocks
+	Clock militaryClock(userHour, userMinute, userSecond);
+	MeridianClock normalClock(userHour, userMinute, userSecond);
+
+	// Start main loop.
 	char userInput;
 	do
 	{
@@ -98,11 +108,11 @@ void Driver::run()
 		default:
 			std::cout << "Enter a valid option please." << std::endl;
 		}
+		// Pause console if they did not quit.
 		if (userInput != 'q')
 		{
 			system("Pause");
 		}
-
-
+	// Continue until they quit
 	} while (userInput != 'q');
 }
