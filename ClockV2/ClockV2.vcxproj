@@ -128,13 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Clock.cpp" />
-    <ClCompile Include="Driver.cpp" />
+    <ClCompile Include="Utility.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MeridianClock.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Clock.h" />
-    <ClInclude Include="Driver.h" />
+    <ClInclude Include="Utility.h" />
     <ClInclude Include="MeridianClock.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
