@@ -1,5 +1,9 @@
 #include "Utility.h"
-
+/*
+	Adreonyx Masanes
+	27 Jan, 2024
+	Project One
+*/
 int main()
 {
 	// User input
