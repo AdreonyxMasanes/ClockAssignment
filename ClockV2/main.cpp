@@ -58,5 +58,7 @@ int main()
 		}
 		// Continue until they quit
 	} while (userInput != 'q');
+
+	std::cout << "Thanks for using my clocks. :D" << std::endl;
 	return 0;
 }
